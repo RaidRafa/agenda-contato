@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Minha agenda digital">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="images/contact-book.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/contact-book.png" alt="agenda">
+            <h1>Agenda</h1>
+        </header>
+        <table>
+            <thead>
+                <tr class="head">
+                    <th>Contato</th>
+                    <th>Telefone</th>
+                    <th>Recado</th>
+                </tr>
+            </thead>
+            <tbody id="contact-table-body">
+                <tr id="default-row">
+                    <td id="default-contato">---</td>
+                    <td id="default-telefone">---</td>
+                    <td id="default-recado">---</td>
+                </tr>
+            </tbody>
+        </table>
+        <form id="form-contato">
+            <div class="input">
+                <input type="text" id="input-contato" required placeholder="Adicionar contato">
+            </div>
+            <div>
+                <input type="tel" id="input-telefone" pattern="^([0-9]{2}) ([0-9]{5})([0-9]{4})$" required placeholder="Telefone Ex: (11 999999999)" autocomplete="number" title="Informe um telefone válido!">
+            </div>
+            <div>
+                <input type="text" id="input-recado" placeholder="Recado">
+            </div>
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+    <div class="footer">
+        <footer>
+            <div class="main-footer">
+                <p class="entrar-contato">
+                    &copy; Rafael - Todos os direitos reservados - 2024
+                </p>
+                <a href="https://github.com/RaidRafa" ><img class="github" src="images/pngegg.png" alt="imagem do github"></a>
+            </div>
+        </footer>
+       </div>
+        <script src="main.js"></script>
+    </div>
