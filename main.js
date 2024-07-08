@@ -18,14 +18,17 @@ document.getElementById('form-contato').addEventListener('submit', function(even
     // Cria uma nova linha na tabela
     const newRow = tbody.insertRow();
 
+    // Cria células para a nova linha
     const contatoCell = newRow.insertCell(0);
     const telefoneCell = newRow.insertCell(1);
     const recadoCell = newRow.insertCell(2);
 
+    // Adiciona os valores às células
     contatoCell.textContent = contato;
     telefoneCell.textContent = telefone;
     recadoCell.textContent = recado;
 
+    // Limpa os campos de entrada
     document.getElementById('input-contato').value = '';
     document.getElementById('input-telefone').value = '';
     document.getElementById('input-recado').value = '';
